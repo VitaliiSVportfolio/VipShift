@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Оптимизированное изображение в хедере */
+.header-image {
+    width: 60%; /* Не растягивается на всю ширину */
+    max-width: 400px; /* Компактный размер на ПК */
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Адаптация под мобильные устройства */
+@media (max-width: 768px) {
+    .header-image {
+        width: 90%; /* На телефонах чуть больше */
+        max-width: none;
+    }
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.2em;
+    color: #ffcc00;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.block {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+h2 {
+    font-size: 1.6em;
+    color: #ff9900;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+ul li {
+    background: rgba(255, 255, 255, 0.1);
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 1.1em;
+}
+
+/* Карточки банков */
+.bank-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px auto;
+    text-align: center;
+    box-shadow: 0 3px 8px rgba(255, 255, 255, 0.1);
+}
+
+.bank-card h3 {
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+/* Кнопка получения бонуса */
+.bonus-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #ff9900;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.bonus-btn:hover {
+    background: #ffaa33;
+}
+
+footer {
+    margin-top: 30px;
+    padding: 15px;
+    background: #1e1e1e;
+    border-radius: 10px;
+}
+
+footer a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+}
